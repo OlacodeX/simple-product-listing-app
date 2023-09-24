@@ -5,6 +5,7 @@ This simple product listing project was built with PHP's [laravel 10](https://la
 - Products listing page with pagination.
 - Product detail page.
 - Shopping cart flow (add and remove products from the shopping cart).
+- Shopping cart page with pagination
 - Checkout with [Paystack payment gateway](https://paystack.com/docs/payments/accept-payments).
 
 ## Project Setup
