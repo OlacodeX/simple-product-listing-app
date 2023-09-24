@@ -34,6 +34,5 @@ class PaymentController extends Controller
             return App::environment('production') ? redirect()->away($response_array["data"]["authorization_url"]) : redirect('/products?reference=tzd_WLG6tlezo5OH0MzfB25S');
         }
         return redirect()->back()->with('alert', 'Sorry we are unable to process your payment at this time, try again in few minutes.');
-        // return view('pages.products', ['products' => $products]);
     }
 }

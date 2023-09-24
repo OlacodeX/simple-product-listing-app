@@ -22,7 +22,6 @@ class ProductsController extends Controller
                  'Cache-Control' => 'no-cache'
              ])->get($verifyUrl);
              $verifyResponseArray = json_decode($verifyResponse, true);
-            //  dd($verifyResponseArray);
              $payment = new Payment();
              $payment->reference = $verifyResponseArray['data']['reference'];
              $payment->status = $verifyResponseArray['data']['status'];
